@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="/static/libs/bootstrap/bootstrap-grid.min.css" />
+	<link rel="stylesheet" href="/static/libs/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="/static/libs/linea/styles.css" />
+	<link rel="stylesheet" href="/static/libs/magnific-popup/magnific-popup.css" />
+	<link rel="stylesheet" href="/static/libs/animate/animate.min.css" />
+	<link rel="stylesheet" href="/static/css/fonts.css" />
+	<link rel="stylesheet" href="/static/css/main.css" />
+	<link rel="stylesheet" href="/static/css/skins/tomato.css" />
+	<link rel="stylesheet" href="/static/css/media.css" />
+</head>
+<body>
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+	<header class="main_head main_color_bg" data-parallax="scroll" data-image-src="media/_bg.jpg" data-z-index = "1" data-position ="top center">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+						<button class="toggle_mnu">
+						<span class="sandwich">
+						<span class="sw-topper"></span>
+						<span class="sw-bottom"></span>
+						<span class="sw-footer"></span>
+						</span>	
+					</button>
+					<nav class="top_mnu">
+						<ul>
+							<li><a href="#about">Обо мне</a></li>
+							<li><a href="#portfolio">Портфолио</a></li>
+							<li><a href="#contacts">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="top_wrapper">
+			<div class="top_descr">
+				<div class="top_centered">
+					<div class="top_text">
+						<h1>Юлия Петрова</h1>
+						<p>Профессиональный фотограф</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<section  id = "about" class = "s_about bg_light">
+		<div class="section_header">
+			<h2>Обо мне</h2>
+			<div class="s_descr_wrap">
+				<div class="s_descr">
+					Познакомимся ближе
+				</div>
+			</div>	
+		</div>
+		<div class="section_content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-md-push-4 animation_1">
+						<h3>Фото</h3>
+						<div class="person">
+							<a href="/media/photo.jpg" class = "popup"><img src="/media/photo.jpg" alt="Alt"></a>
+						</div>
+					</div>
+									
+					<div class="col-md-4 col-md-pull-4 animation_2">
+						<h3>Немного о себе</h3>
+						<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века</p>
+						<p>Lorem Ipsum  - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов</p>
+
+					</div>
+					<div class="col-md-4 personal_last_block animation_3">
+						<h3>Персональная информация</h3>
+						<h2 class="personal_header">Юлия Петрова</h2>
+						<ul>
+							<li>Профессиональная фотосъемка: свадебная, репортажная</li>
+							<li>Оборудование: Canon Mark2 + Canon EF 50 f/1.4 USM + Canon EF 24-70 f/2.8 II L USM</li>
+							<li>Номер телефона: +79216140708</li>
+							<li>E-mail: <a href="mailto:youmail@mail.ru">youmail@mail.ru</a></li>
+							<li>Веб-сайт: <a href="http://www.petrovajulia.ru" target="_blank">http://petrovajulia.ru</a></li>
+						</ul>
+						<div class="social_wrap">
+							<ul>
+								<li><a href="#" target="_blank"><span class="i fa fa-instagram"></span></a></li>
+								<li><a href="#" target="_blank"><span class="i fa fa-vk"></span></a></li>
+								<li><a href="#" target="_blank"><span class="i fa fa-facebook"></span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section  id = "portfolio" class = "s_portfolio bg_dark">
+		<div class="section_header">
+		<h2>Портфолио</h2>
+		<div class="s_descr_wrap">
+			<div class="s_descr">
+			Мои последние работы
+			</div>
+		</div>
+		</div>
+		<div class="section_content">
+			<div class="container">
+				<div class="row">
+					<div id="portfolio_grid">
+
+ 						{% include "detail.html"%}
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section  id = "contacts" class = "s_contacts bg_light">
+		<div class="section_header">
+		<h2>Контакты</h2>
+		<div class="s_descr_wrap">
+			<div class="s_descr">
+			Оставьте ваше сообщение
+			</div>
+		</div>
+		</div>
+		<div class="section_content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="contact_box">
+							<div class="contacts_icon icon-basic-geolocalize-05"></div>
+							<h3>Адрес:</h3>
+							<p>г. Калининград</p>
+						</div>
+						<div class="contact_box">
+							<div class="contacts_icon icon-basic-smartphone"></div>
+							<h3>Телефон:</h3>
+							<p>+79216140708</p>
+						</div>
+						<div class="contact_box">
+							<div class="contacts_icon icon-basic-webpage"></div>
+							<h3>Веб Сайт:</h3>
+							<p><a href="//petrovajulia.ru" target="_blank">www.petrovajulia.ru</a></p>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<form action="https://formspree.io/junglecrew@gmail.com" method="POST" class="main_form" novalidate>
+							<label class="form-group">
+								<span class = "color_element">*</span>Ваше имя:
+								<input name="name" placeholder="Ваше имя" data-validation-required-message="Введите имя" required />
+								<span class="help-block"></span>
+							</label>
+							<label class="form-group">
+								<span class = "color_element">*</span>Ваш E-mail:
+								<input type="email" name="email" placeholder="Ваш E-mail" data-validation-required-message="Некорректно введен E-mail" required />
+								<span class="help-block"></span>
+							</label>
+							<label class="form-group">
+								<span class = "color_element">*</span>Вашe сообщение:
+								<textarea name="message" placeholder="Ваше сообщение" data-validation-required-message="Вы не ввели сообщение" required ></textarea>
+								<span class="help-block"></span>
+							</label>
+							<button>Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="main_footer bg_dark">
+		<div class="container">
+			<div class="col-md-12">
+				&copy; 2017 Юлия Петрова
+				<div class="social_wrap">
+					<ul>
+						<li><a href="#" target="_blank"><span class="i fa fa-instagram"></span></a></li>
+						<li><a href="#" target="_blank"><span class="i fa fa-vk"></span></a></li>
+						<li><a href="#" target="_blank"><span class="i fa fa-facebook"><span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<div class="hidden"></div>
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	
+	<script src="/static/libs/jquery/jquery-2.1.3.min.js"></script>
+	<script src="/static/libs/parallax/parallax.min.js"></script>
+	<script src="/static/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="/static/libs/mixitup/mixitup.min.js"></script>
+	<script src="/static/libs/scroll2id/PageScroll2id.min.js"></script>
+	<script src="/static/libs/animate/animate-css.js"></script>
+	<script src="/static/libs/waypoints/waypoints.min.js"></script>
+	<script src="/static/libs/jqBootstrapValidation/jqBootstrapValidation.js"></script>
+	<script src="/static/libs/owlcarousel/owl.carousel.min.js"></script>
+	<script src="/static/js/common.js"></script>
+	
+	
+
+
+
+
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
