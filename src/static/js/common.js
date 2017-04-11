@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 	$("#portfolio_grid").mixItUp();
 
-
+	$(".popup").magnificPopup({type:"image"});
 	$(".popup_content").magnificPopup({type:"inline", midClick:true, showclosebtn: true, closeBtnInside:true, closeOnContentClick: true});
 
 	$(".top_text h1").animated("fadeInDown", "fadeOutUp");
