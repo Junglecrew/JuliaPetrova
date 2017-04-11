@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {% load staticfiles %}
 
 {% for post in post_list %}
@@ -26,33 +25,4 @@
 			</div>
 	</div>
 
-=======
-{% load staticfiles %}
-
-{% for post in post_list %}
-
-	<div class="mix col-md-3 col-sm-6 col-xs-12 portfolio_item animation_4">
-		<img src="{{ post.avatar.url }}" alt="ALT" />
-			<div class="port_item_cont">
-				<br>
-				<a class="popup_content" href="#{{post.id}}" >Посмотреть</a>
-			</div>
-
-			<!--Всплывающее окно, его содержимое -->
-			<div id="{{post.id}}" class="mfp-hide">
-				<div class="podrt_descr">
-
-					<div class="modal-box-content">
-						<button class="mfp-close" type="button" title = "close (Esc)">×</button>
-						<br>
-						<br>
-						{% for obj in post.gallery.public %}
-							<img src="{{obj.image.url }}" alt="{{ post.photo.title }}">
-						{% endfor %}
-					</div>
-				</div>
-			</div>
-	</div>
-
->>>>>>> 7955b21f0c49479d26cd7a2bbbeaeb5d694839dc
 {% endfor %}
